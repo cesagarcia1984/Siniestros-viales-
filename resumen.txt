@@ -1,10 +1,23 @@
-En los procesos realizados durante el Análisis Exploratorio de Datos (EDA) en los dataframes "Hechos" y "Victimas", se llevaron a cabo análisis detallados de las variables cuantitativas, centrándose en días, meses y años. Se observó que estas variables presentan una distribución normal sin concentración en un día o mes particular, por lo que se determinó que no proporcionan métricas significativas para abordar el problema en cuestión. Además, se destacó la ausencia de valores atípicos, con la excepción de la variable "N_VICTIMAS", que fue eliminada.
-
-En cuanto a las variables cualitativas, que fueron convertidas a categóricas, se llevó a cabo un análisis mediante gráficos de barras. Se decidió conservar únicamente las clases de mayor frecuencia, eliminando aquellas con menor incidencia en la variable. Posteriormente, se calculó el porcentaje de incidencia de cada clase con respecto al número total de instancias para cada variable. De este proceso, se determinó que en la variable "PARTICIPANTES" de la tabla "Hechos", el 18.55% corresponde a la clase "peatón-pasajero" y el 15.32% a "Moto - auto". En la variable "VICTIMA", se identificó que el 50.60% son víctimas de moto y el 43.55% son víctimas peatones. Por último, en la variable "ACUSADO", se observó que el 34.68% son acusados en auto y el 27.02% son acusados pasajeros.
-
-Dado que estas variables presentan cierta redundancia en el mapa de calor que mide la correlación, se optó por seleccionar solo la variable "VICTIMA" para abordar el problema en cuestión. Asimismo, se tomó la variable "COMUNA", destacando el 18.15% en la Comuna 1 y el 15.32% en la Comuna 4 de la tabla "Hechos". En la tabla "Victimas", se consideró la variable "Victimas", donde el 56% corresponden a accidentes con moto y peatón, y el 30% solo a peatones. Se añadieron para visualizaciones adicionales las variables "SEXO" y "EDAD".
-
-Como parte de la propuesta de solución al problema, se sugiere la creación de dos KPIs para medir, monitorear y tomar decisiones. Estos KPIs se construirán utilizando las variables "COMUNA" y "VICTIMAS", ya que contienen las clases más representativas del problema a tratar, junto con la variable de fecha para un análisis temporal.
+En los procesos realizados durante el Análisis Exploratorio de Datos (EDA) en los dataframes "Hechos" y "Victimas",
+se llevaron a cabo análisis detallados de las variables cuantitativas, centrándose en días, meses y años. Se 
+observó que estas variables presentan una distribución normal sin concentración en un día o mes particular, 
+por lo que se determinó que no proporcionan métricas significativas para abordar el problema en cuestión. Además,
+se destacó la ausencia de valores atípicos, con la excepción de la variable "N_VICTIMAS", que fue eliminada.En 
+cuanto a las variables cualitativas, que fueron convertidas a categóricas, se llevó a cabo un análisis mediante 
+gráficos de barras. Se decidió conservar únicamente las clases de mayor frecuencia, eliminando aquellas con menor 
+incidencia en la variable. Posteriormente, se calculó el porcentaje de incidencia de cada clase con respecto al
+número total de instancias para cada variable. De este proceso, se determinó que en la variable "PARTICIPANTES" 
+de la tabla "Hechos", el 18.55% corresponde a la clase "peatón-pasajero" y el 15.32% a "Moto - auto". En la 
+variable "VICTIMA", se identificó que el 50.60% son víctimas de moto y el 43.55% son víctimas peatones. Por 
+último, en la variable "ACUSADO", se observó que el 34.68% son acusados en auto y el 27.02% son acusados 
+pasajeros.Dado que estas variables presentan cierta redundancia en el mapa de calor que mide la correlación, 
+se optó por seleccionar solo la variable "VICTIMA" para abordar el problema en cuestión. Asimismo, se tomó la 
+variable "COMUNA", destacando el 18.15% en la Comuna 1 y el 15.32% en la Comuna 4 de la tabla "Hechos". En la 
+tabla "Victimas", se consideró la variable "Victimas", donde el 56% corresponden a accidentes con moto y peatón, 
+y el 30% solo a peatones. Se añadieron para visualizaciones adicionales las variables "SEXO" y "EDAD".Como 
+parte de la propuesta de solución al problema, se sugiere la creación de dos KPIs para medir, monitorear y 
+tomar decisiones. Estos KPIs se construirán utilizando las variables "COMUNA" y "VICTIMAS", ya que contienen 
+las clases más representativas del problema a tratar, junto con la variable de fecha para un análisis temporal.
 
 
 
